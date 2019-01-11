@@ -4,11 +4,11 @@
 ## Overview:
 The main idea of this project is to implement a path planning algorithm on an Automated Guided Vehicle (AGV) to plan its route from a start point to end point. An AGV is an advanced mobile robot that follows wires, markers, invisible UV markers, cameras and lasers to move. AGVs follow a defined path every time, they are not suitable for non-repetitive tasks and decrease the flexibility of operations overall.
 
-We aim to demonstrate that the above-mentioned limitations of AGV can be alleviated by implementing a novel path planning technique (A* algorithm) for searching the path in a known environment. To get the information about the environment, this method is topped by a g-mapping technique using SLAM and develop a binary map of the environment to feed to the A* algorithm.
+We aim to demonstrate that the above-mentioned limitations of AGV can be alleviated by implementing a novel path planning technique (RRT algorithm) for searching the path in a known environment. To get the information about the environment, this method is topped by a g-mapping technique using SLAM and develop a binary map of the environment to feed to the RRT algorithm.
 
 The AGV (robot here) drives around in a simulated world, navigating through obstacles using LIDAR sensor. Whenever an obstacle is recognized, the g-mapping algorithm prepares a binary 2D map of the environment. For example, if the robot finds an obstacle while moving around, like a wall or any solid surface, it refers that coordinates as 1 , meaning that there is a obstacle in front of the robot.
 
-After preparing a map of the environment, the robot uses path planning algorithm (A* algorithm) and finds a optimal path between its current position and the goal point.
+After preparing a map of the environment, the robot uses path planning algorithm (RRT algorithm) and finds a optimal path between its current position and the goal point.
 
 The presentation for the project can be found on Youtube [here](https://youtu.be/zoL4Fnlx-bw). The video provides an overview of the project, UML diagrams, as well as a demo.
 
